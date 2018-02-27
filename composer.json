@@ -19,7 +19,7 @@
     ],
     "require": {
         "symfony/framework-bundle": ">=2.8",
-        "spinegar/sugar7wrapper": "dev-guzzlehttp"
+        "spinegar/sugar7wrapper": "dev-master"
     },
     "replace": {
         "redpilllinpro/sugarcrm-bundle": "*"
