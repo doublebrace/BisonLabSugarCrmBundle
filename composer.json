@@ -1,5 +1,5 @@
 {
-    "name": "bisonlab/sugarcrm-bundle",
+    "name": "doublebrace/sugarcrm-bundle",
     "type": "symfony-bundle",
     "description": "Bundle for simple access to the REST API of Sugar CRM 7 and up.",
     "keywords": ["symfony rest sugarcrm"],
