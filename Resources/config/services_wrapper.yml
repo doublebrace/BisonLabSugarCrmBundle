@@ -5,4 +5,5 @@ services:
             - "%sugarcrm_base_url%"
             - "%sugarcrm_username%"
             - "%sugarcrm_password%"
+            - "%sugarcrm_platform%"
 

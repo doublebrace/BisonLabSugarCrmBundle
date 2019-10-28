@@ -2,7 +2,6 @@
 
 namespace BisonLab\SugarCrmBundle\Service;
 
-
 /*
  * Just a service object for the sugar7crm-wrapper class.
  */
@@ -13,11 +12,14 @@ class SugarWrapper
     private $sugar;
     private $options;
 
-    public function __construct($base_url, $username, $password)
+    public function __construct($base_url, $username, $password, $platform)
     {
-        $this->options = array('base_url' => $base_url, 
-            'username' => $username, 
-            'password' => $password);
+        $this->options = array(
+            'base_url' => $base_url,
+            'username' => $username,
+            'password' => $password,
+            'platform' => $platform,
+        );
     }
 
 
@@ -42,6 +44,7 @@ class SugarWrapper
             ->setUrl($this->options['base_url'])
             ->setUsername($this->options['username'])
             ->setPassword($this->options['password'])
+            ->setPlatform($this->options['platform'])
             ->connect();
     }
 }
